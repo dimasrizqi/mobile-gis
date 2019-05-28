@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#016df0</color>
+    <color name="colorPrimaryDark">#004ca7</color>
+    <color name="colorAccent">#00bbff</color>
+    <color name="accentPressed">#02a1da</color>
+    <color name="colorText">#999999</color>
+    <color name="jet">#666666</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0099cc</color>
+    <color name="white">#ffffff</color>
+    <color name="redAlert">#F44336</color>
+    <color name="colorBackGrey">#F8F8F8</color>
+    <color name="accent2">#006df0</color>
+</resources>

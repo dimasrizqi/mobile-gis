@@ -1,0 +1,64 @@
+<!--<LinearLayout android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical"-->
+    <!--android:focusable="false"-->
+    <!--android:id="@+id/dragView"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+
+
+<!--</LinearLayout>-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/label1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_gravity="bottom|center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:layout_height="fill_parent">
+
+                <com.dd.morphingbutton.impl.IndeterminateProgressButton
+                    android:id="@+id/btnReset"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Reset"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="5dp"
+                android:layout_height="fill_parent">
+
+                <com.dd.morphingbutton.impl.IndeterminateProgressButton
+                    android:id="@+id/btnTerapkan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Terapkan"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

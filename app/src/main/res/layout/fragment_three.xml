@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/labelAudio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.gis.collection.ui.addplace.FourFragment">
+
+    <LinearLayout
+        android:id="@+id/emptyAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_mic_2" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fillAudio"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/emptyAudio"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/audioText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:ems="10"
+            android:visibility="gone"
+            android:text="Audio File"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</RelativeLayout>

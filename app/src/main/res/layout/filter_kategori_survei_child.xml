@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_project_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Project"
+            android:textStyle="bold"
+            android:textColor="@color/colorText" />
+
+        <ProgressBar
+            android:id="@+id/pbLoadProjek"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardHolderPJ"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:indeterminate="false" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msProject"
+            android:layout_below="@+id/tv_project_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/mb_gray"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_jenis_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Jenis"
+            android:textStyle="bold"
+            android:textColor="@color/colorText" />
+
+        <ProgressBar
+            android:id="@+id/pbLoadJenis"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardHolderPJ"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:indeterminate="false" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msJenis"
+            android:layout_below="@+id/tv_jenis_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/mb_gray"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_objek_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Objek"
+            android:textStyle="bold"
+            android:textColor="@color/colorText" />
+
+        <ProgressBar
+            android:id="@+id/pbLoadObjek"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardHolderTxt6"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:visibility="gone" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msObjek"
+            android:layout_below="@+id/tv_objek_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

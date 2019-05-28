@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:background="#fff"
+    app:cardElevation="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_survey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="The Gunawarman"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/popupMenu"
+                        android:background="@color/white"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        app:srcCompat="@drawable/ic_more_vert" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:text="The Gunawarman"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_keterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Lorem ipsum dolor sit amet"
+                    android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_place_2" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bogor, Indonesia"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/icj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_turned_in" />
+
+                <TextView
+                    android:id="@+id/tv_jenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sekolah Menengah Pertama"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/icw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_access_time" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28 September 2018 10:20"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/detailImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:text="Expand"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

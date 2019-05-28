@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.gis.collection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"  />
+
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBlOTwWenPIwkjjUJFt_529NrsI1UJs0H0" />
+
+        <activity android:name="id.gis.collection.ui.main.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name="id.gis.collection.ui.login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="id.gis.collection.ui.signup.SignupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="id.gis.collection.ui.intro.IntroActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.schibstedspain.leku.LocationPickerActivity"
+            android:label="@string/leku_title_activity_location_picker"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:parentActivityName="id.gis.collection.ui.addplace.AddPlaceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/leku_searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.gis.collection.ui.addplace.AddPlaceActivity" />
+        </activity>
+        <activity android:name="id.gis.collection.ui.splashscreen.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="id.gis.collection.ui.addplace.AddPlaceActivity" android:screenOrientation="portrait" />
+        <activity android:name="id.gis.collection.ui.place.PlaceActivity" android:screenOrientation="portrait" />
+        <activity android:name="id.gis.collection.ui.profile.ProfileActivity" android:screenOrientation="portrait" />
+
+        <service
+            android:name="id.gis.collection.ui.main.TrackingService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

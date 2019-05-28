@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real-time Data"
+            android:textStyle="bold"
+            android:textColor="@color/jet"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="MGC dikembangkan untuk memudahkan proses pengumpulan data lapangan surveyor dan data yang terkumpul dapat dimonitoring secara real time."
+            android:textColor="@color/colorText"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/intro1"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/oval"/>
+    </LinearLayout>
+
+</RelativeLayout>
